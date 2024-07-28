@@ -1,10 +1,15 @@
+import random
 
 
 def cut_cake(people):
     try:
         z = 1 / people
         print(f'Каждый получит по {z} пирога')
-    except ZeroDivisionError:
-        print('Не могу поделить на 0')
+    except (ZeroDivisionError, TypeError):
+        print('Не могу поделить')
 
-cut_cake(0)
+
+
+while True:
+    people = random.randint(1, 10)
+    cut_cake(people)
