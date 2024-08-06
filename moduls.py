@@ -7,3 +7,10 @@ count = Counter(phones)
 print(count)
 
 print(count['iPhone Xs'])
+
+
+text = 'А помнишь дядя, ведь не даром Москва спалёная пожаром, французу отдана'
+
+count1 = Counter(text.lower().replace(' ',''))
+
+print(count1)
